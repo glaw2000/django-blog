@@ -14,8 +14,11 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <div class="image-flash">
+                                <!-- <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
+                                </div> -->
+                                <div class="image-flash">
+                                    <p class="author">Author: anonymous </p>
                                 </div>
                             </div>
                             <a href="#" class="post-link">
@@ -50,3 +53,9 @@
 
 <!-- index.html content ends here -->
 {% endblock %}
+
+{% block copyright %}
+<!-- index.html copyright starts here -->
+<p class="m-0 text-center text-white">Made by CI bootcamp student 2049 LANC group</p>
+<!-- index.html copyright ends here -->
+{% endblock copyright %}
