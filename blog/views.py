@@ -7,7 +7,6 @@ from .forms import CommentForm
 
 # Create your views here.
 
-
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     # queryset = Post.objects.order_by("created_on")
@@ -61,7 +60,7 @@ def post_detail(request, slug):
         },
     )
 
-    def comment_edit(request, slug, comment_id):
+def comment_edit(request, slug, comment_id):
     """
     view to edit comments
     """
